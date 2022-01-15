@@ -45,7 +45,66 @@
 </head>
 
 <body>
+    <!--Navbar agregado-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Covid19</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#inicio">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#about">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!--formulario-->
+    <div id="js-form-wrapper" class="col-md-6 container" style="display: block;">
+        <form id="js-form">
+            <div class="form-group">
+                <label for="js-input-email">Email address</label>
+                <input type="email" class="form-control" id="js-input-email" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="js-input-password">Password</label>
+                <input type="password" class="form-control" id="js-input-password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!--tablas-->
+    <div id="js-table-wrapper" class="col-md-12" style="display: none">
+        <table id="js-table-posts" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!--Ventana Modal-->
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog modal-dialog-centered w-25" role="document">
+            <div class="modal-content bg-light">
+                <div class="modal-body">...</div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
